@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#0f1724"/>
+    <title>ANAS BAGDADY | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+        <div class="logo">ANAS <span>BAGDADY</span></div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-key="nav_home">Home</a></li>
+            <li><a href="#about" data-key="nav_about">About</a></li>
+            <li><a href="#education" data-key="nav_edu_exp">Education</a></li>
+            <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+            <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+            <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="header-socials">
+            <a href="https://wa.me/963931733249" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/18CQQWkdm3/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/eng_anas_a_bagdady?igsh=bTNkZWllczkxZm9l" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:bgdady987@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+            <button class="lang-btn" onclick="changeLanguage('en')" aria-pressed="false">EN</button>
+            <button class="lang-btn" onclick="changeLanguage('ar')" aria-pressed="false">AR</button>
+            <button class="lang-btn" onclick="changeLanguage('de')" aria-pressed="false">DE</button>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<section id="home" class="hero section reveal" role="region" aria-label="Hero">
+    <div class="container hero-grid">
+        <div class="hero-content card">
+            <h1 data-key="hero_title">Hi, I'm Anas Bagdady</h1>
+            <h3 data-key="hero_subtitle">Informatics Engineer & Backend Developer</h3>
+            <p data-key="hero_desc">Specialized in building robust backend systems, designing APIs, and delivering scalable solutions.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/Anas-bagdady/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/963931733249" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:bgdady987@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary" data-key="btn_contact">Contact Me</a>
+                <a href="#projects" class="btn outline" data-key="btn_projects">View Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-image card glass">
+            <div class="profile-glass">
+                <img src="a.jpg" alt="Anas Bagdady profile" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about section reveal" role="region" aria-label="About">
+    <div class="container">
+        <h2 class="section-title" data-key="about_title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-info card">
+                <p data-key="about_text">
+                    I am an Informatics Engineer with a strong focus on Backend Development and building scalable, efficient web systems.
+                </p>
+
+                <p data-key="about_text_2">
+                    I have hands-on experience working on real-world projects, including full web systems and automation tools.
+                </p>
+
+                <p data-key="about_text_3">
+                    I enjoy solving complex problems, working in team environments, and contributing to building modern digital solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="edu-exp section reveal" role="region" aria-label="Education">
+    <div class="container timeline-wrapper" style="justify-content:center;">
+        <div class="timeline-column">
+            <h2 class="section-title" data-key="edu_title">Education</h2>
+
+            <div class="timeline">
+                <div class="timeline-item card">
+                    <h4 data-key="edu_degree">Bachelor in Informatics Engineering</h4>
+                    <span class="date">2020 - 2025</span>
+                    <p data-key="edu_institution">Ebla University, Syria</p>
+                    <p data-key="edu_extra">Participation in International Programming Competition 2025</p>
+                </div>
+
+                <div class="timeline-item card">
+                    <h4 data-key="certs_title">Certifications</h4>
+
+                    <ul class="cert-list" style="margin-top:0.6rem;list-style:none;padding:0;gap:0.6rem;display:flex;flex-direction:column;">
+                        <li>
+                            <strong data-key="cert1_title">Python Certificate</strong>
+                            <div class="muted" data-key="cert1_desc" style="margin-top:0.25rem;">
+                                Completed professional training in Python programming and Django web development.
+                            </div>
+                        </li>
+
+                        <li>
+                            <strong data-key="cert2_title">Django Certificate</strong>
+                            <div class="muted" data-key="cert2_desc" style="margin-top:0.25rem;">
+                                Completed professional training in Django web development.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects section reveal" role="region" aria-label="Projects">
+    <div class="container">
+        <h2 class="section-title" data-key="projects_title">Projects</h2>
+
+        <div class="projects-section software-projects">
+            <h3 class="section-subtitle" data-key="software_title">Software Projects</h3>
+
+            <div class="software-grid">
+                <div class="project-card card grad">
+                    <div class="project-card-body">
+                        <h4 data-key="grad_title">University Library Automation</h4>
+                        <span class="date">2024 - 2025</span>
+                        <p data-key="grad_desc">Full web system for managing university library using Django. Features include RESTful APIs, book management, and user borrowing systems.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-body">
+                        <h4 data-key="p1_title">Student Management</h4>
+                        <p data-key="p1_desc">Web application using Python, MySQL and HTML/CSS.</p>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-body">
+                        <h4 data-key="p2_title">Data Automation</h4>
+                        <p data-key="p2_desc">Python program for data analysis and automation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-body">
+                        <h4 data-key="p3_title">E-Learning Platform</h4>
+                        <p data-key="p3_desc">Online learning platform for courses.</p>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-body">
+                        <h4 data-key="p4_title">Company Website</h4>
+                        <p data-key="p4_desc">Professional company services presentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section media-projects">
+            <h3 class="section-subtitle" data-key="media_title">Media / Business Project</h3>
+
+            <div class="media-grid">
+                <div class="project-card card featured xax4 large">
+                    <div class="project-card-header">
+                        <div class="project-logo-wrap">
+                            <img src="mm.jpg" alt="xax4media logo" class="project-logo" loading="lazy">
+                        </div>
+
+                        <div class="project-meta">
+                            <h4 data-key="xax4_title">xax4media</h4>
+                            <div class="tags">
+                                <span class="tag">Digital Media</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-body">
+                        <p data-key="xax4_desc">A digital media project for content creation, design, and social media management.</p>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <a href="https://www.instagram.com/max_4_media?igsh=MW1lcHY5bWJqMnVuZw==" class="btn small" target="_blank" rel="noopener noreferrer" aria-label="xax4media Instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-lang section reveal" role="region" aria-label="Skills">
+    <div class="container">
+        <div class="skills-wrapper">
+            <div class="skills-col">
+                <h2 class="section-title" data-key="skills_title">Technical Skills</h2>
+
+                <div class="skills-list grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Django REST Framework</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">HTML5 / CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Backend Development</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact section reveal" role="region" aria-label="Contact">
+    <div class="container">
+        <h2 class="section-title" data-key="contact_title">Get In Touch</h2>
+
+        <div class="contact-grid">
+            <a href="mailto:bgdady987@gmail.com" class="contact-item card" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong data-key="contact_email">Email</strong>
+                    <div class="muted" data-key="contact_email_value">bgdady987@gmail.com</div>
+                </div>
+            </a>
+
+            <a href="tel:0931733249" class="contact-item card" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <strong data-key="contact_phone">Phone</strong>
+                    <div class="muted" data-key="contact_phone_value">0931733249</div>
+                </div>
+            </a>
+
+            <a href="https://wa.me/963931733249" class="contact-item card" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <strong data-key="contact_whatsapp">WhatsApp</strong>
+                    <div class="muted" data-key="contact_whatsapp_note">Message me on WhatsApp</div>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/eng_anas_a_bagdady?igsh=bTNkZWllczkxZm9l" class="contact-item card" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <div>
+                    <strong data-key="contact_instagram">Instagram</strong>
+                    <div class="muted" data-key="contact_instagram_value">@eng_anas_a_bagdady</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-inner">
+        <p>&copy; 2024 ANAS BAGDADY. All Rights Reserved.</p>
+
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/eng_anas_a_bagdady?igsh=bTNkZWllczkxZm9l" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/18CQQWkdm3/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/963931733249" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:bgdady987@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
