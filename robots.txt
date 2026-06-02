@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anas-bagdady.github.io/anas/sitemap.xml
