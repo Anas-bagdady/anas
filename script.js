@@ -6,45 +6,54 @@ const translations = {
     nav_home: "Home",
     nav_about: "About",
     nav_edu_exp: "Education",
+    nav_experience: "Experience",
     nav_projects: "Projects",
     nav_skills: "Skills",
     nav_contact: "Contact",
     hero_title: "Hi, I'm Anas Bagdady",
-    hero_subtitle: "Informatics Engineer & Backend Developer",
-    hero_desc: "Specialized in building robust backend systems, designing APIs, and delivering scalable solutions.",
+    hero_subtitle: "Full-Stack Developer | Backend Specialist",
+    hero_desc: "I develop complete web applications from frontend interfaces to backend systems, with a strong specialization in Django, REST APIs, databases, and scalable backend architecture.",
     btn_contact: "Contact Me",
     btn_projects: "View Projects",
+    btn_live_website: "Live Website",
+    btn_github: "GitHub",
+    btn_instagram: "Instagram",
+    exp_desc_1: "Assisted in network and server maintenance, provided technical support, and contributed to digital transformation initiatives within the university.",
+    exp_desc_2: "Developed small software solutions and gained practical experience in system administration and IT operations.",
+    skills_cat_backend: "Backend",
+    skills_cat_frontend: "Frontend",
+    skills_cat_tools: "Tools",
+    skills_cat_core: "Core Skills",
+    proj_feature_responsive: "• Modern responsive design",
+    proj_feature_presentation: "• Professional business presentation",
+    proj_feature_showcase: "• Service showcase pages",
+    proj_feature_contact: "• Contact and inquiry functionality",
+    proj_feature_ux: "• Optimized user experience across desktop and mobile devices",
     about_title: "About Me",
-    about_text: "I am an Informatics Engineer focused on Backend Development, REST API design, database management, and building scalable web systems using Python and Django.",
-    about_text_2: "I have hands-on experience delivering complete web applications and data automation tools, with emphasis on maintainability and performance.",
-    about_text_3: "I enjoy solving complex backend problems, collaborating in teams, and delivering production-ready systems that scale.",
+    about_summary: "Full-Stack Developer specializing in backend engineering, API development, and scalable web systems. Experienced in building complete web applications while focusing on clean architecture, performance, and maintainable code.",
+    about_text: "I am a Full-Stack Developer with a strong specialization in backend development and building scalable web applications.",
+    about_text_2: "I work across both frontend and backend technologies, developing complete solutions that combine modern user interfaces with reliable and secure server-side systems.",
+    about_text_3: "My primary expertise includes Django, Django REST Framework, API development, database design, and backend architecture, while also having practical experience building responsive frontend applications.",
     edu_title: "Education",
     edu_degree: "Bachelor in Informatics Engineering",
     edu_institution: "Ebla University, Syria",
     edu_extra: "Participation in International Programming Competition 2025",
+    certs_title: "Certifications",
+    cert1_title: "Python Certificate",
+    cert1_desc: "Completed professional training in Python programming and Django web development.",
+    cert2_title: "Django Certificate",
+    cert2_desc: "Completed professional training in Django web development.",
     exp_title: "Experience",
     exp_role: "Internship – IT Department",
-    exp_list: "",
+    exp_institution: "Ebla University, Syria",
     projects_title: "Projects",
-    grad_proj_title: "Graduation Project",
     grad_title: "University Library Automation",
-    grad_desc: "Full web system for managing university library using Django. Features include RESTful APIs, book management, and user borrowing systems.",
-    other_proj_title: "Other Projects",
-    p1_title: "Student Management",
-    p1_desc: "Web application using Python, MySQL and HTML/CSS.",
-    p2_title: "Data Automation",
-    p2_desc: "Python program for data analysis and automation.",
-    p3_title: "E-Learning Platform",
-    p3_desc: "Online learning platform for courses.",
-    p4_title: "Company Website",
-    p4_desc: "Professional company services presentation.",
-    xax4_title: "xax4media",
+    grad_desc: "A full web system for managing university library resources using Django. The system includes user management, project/book management, favorites, ratings, notifications, search functionality, and RESTful APIs.",
+    p5_title: "Prime Transporter",
+    p5_desc: "A professional transportation and logistics company website developed to showcase services, strengthen brand identity, and provide a modern user experience across all devices.",
+    xax4_title: "Max4Media",
     xax4_desc: "A digital media project for content creation, design, and social media management.",
     skills_title: "Technical Skills",
-    lang_title: "Languages",
-    lang_ar: "Arabic:",
-    lang_de: "German:",
-    lang_en: "English:",
     contact_title: "Get In Touch",
     contact_desc: "I am open to new opportunities and collaborations.",
     /* new keys */
@@ -53,7 +62,7 @@ const translations = {
     contact_email: "Email",
     contact_email_value: "bgdady987@gmail.com",
     contact_phone: "Phone",
-    contact_phone_value: "0931733249",
+    contact_phone_value: "+963 931 733 249",
     contact_whatsapp: "WhatsApp",
     contact_whatsapp_note: "Message me on WhatsApp",
     contact_instagram: "Instagram",
@@ -63,20 +72,36 @@ const translations = {
     nav_home: "الرئيسية",
     nav_about: "نبذة عني",
     nav_edu_exp: "التعليم",
+    nav_experience: "الخبرة",
     nav_projects: "المشاريع",
     nav_skills: "المهارات",
     nav_contact: "تواصل معي",
     hero_title: "مرحباً، أنا أنس بغدادي",
-    hero_subtitle: "مهندس معلوماتية ومطوّر Back-end",
-    hero_desc: "متخصص في بناء أنظمة خلفية قوية، تصميم واجهات برمجة التطبيقات، وتقديم حلول قابلة للتوسع.",
+    hero_subtitle: "مطور Full-Stack | متخصص في الباك-إند",
+    hero_desc: "أطور تطبيقات ويب كاملة من واجهات المستخدم إلى أنظمة الباك-إند، مع تخصص قوي في Django وواجهات REST APIs وقواعد البيانات وهندسة باك-إند قابلة للتوسع.",
     btn_contact: "تواصل معي",
     btn_projects: "عرض المشاريع",
+    btn_live_website: "الموقع الحي",
+    btn_github: "GitHub",
+    btn_instagram: "إنستغرام",
+    exp_desc_1: "ساعدت في صيانة الشبكات والخوادم، وقدمت الدعم الفني وساهمت في مبادرات التحول الرقمي داخل الجامعة.",
+    exp_desc_2: "طورت حلول برمجية صغيرة واكتسبت خبرة عملية في إدارة الأنظمة وعمليات تقنية المعلومات.",
+    skills_cat_backend: "الباك-إند",
+    skills_cat_frontend: "الواجهة الأمامية",
+    skills_cat_tools: "الأدوات",
+    skills_cat_core: "المهارات الأساسية",
+    proj_feature_responsive: "• تصميم متجاوب وحديث",
+    proj_feature_presentation: "• عرض احترافي للأعمال",
+    proj_feature_showcase: "• صفحات عرض الخدمات",
+    proj_feature_contact: "• وظيفة الاتصال والاستعلام",
+    proj_feature_ux: "• تجربة مستخدم محسنة على سطح المكتب والجوال",
     about_title: "نبذة عني",
 
     /* About section - professional Arabic (updated) */
-    about_text: "أنا مهندس معلوماتية أركز على تطوير الواجهات الخلفية، وتصميم واجهات برمجة التطبيقات REST، وإدارة قواعد البيانات، وبناء أنظمة ويب قابلة للتوسع باستخدام Python وDjango.",
-    about_text_2: "لدي خبرة عملية في تنفيذ تطبيقات ويب متكاملة وأدوات أتمتة البيانات، مع اهتمام بجودة الكود وأداء النظام.",
-    about_text_3: "أحب حل مشاكل الباك-إند المعقدة والعمل ضمن فرق تقنية لتسليم أنظمة جاهزة للإنتاج وقابلة للتوسع.",
+    about_summary: "مطور Full-Stack متخصص في هندسة الباك-إند وتطوير واجهات برمجة التطبيقات وأنظمة الويب القابلة للتوسع. لدي خبرة في بناء تطبيقات ويب كاملة مع التركيز على بنية نظيفة، الأداء، وكود قابل للصيانة.",
+    about_text: "أنا مطور Full-Stack مع تخصص قوي في تطوير الباك-إند وبناء تطبيقات ويب قابلة للتوسع.",
+    about_text_2: "أعمل على تقنيات الواجهة الأمامية والواجهة الخلفية، وأطور حلولاً كاملة تجمع بين واجهات مستخدم حديثة وأنظمة خادم آمنة وموثوقة.",
+    about_text_3: "تشمل خبرتي الأساسية Django وDjango REST Framework وتطوير API وتصميم قواعد البيانات وهندسة الباك-إند، بينما لدي أيضاً خبرة عملية في بناء تطبيقات واجهة أمامية متجاوبة.",
     
     /* Education section - formal Arabic (updated) */
     edu_title: "التحصيل العلمي",
@@ -93,27 +118,15 @@ const translations = {
 
     exp_title: "الخبرة",
     exp_role: "متدرب – قسم تكنولوجيا المعلومات",
-    exp_list: "",
+    exp_institution: "جامعة إبلا، سوريا",
     projects_title: "المشاريع",
-    grad_proj_title: "مشروع التخرج",
     grad_title: "نظام آلي لمكتبة الجامعة",
-    grad_desc: "نظام ويب كامل لإدارة مكتبة الجامعة باستخدام Django، يتضمن واجهات برمجة REST وإدارة الكتب ونظام إعارة للمستخدمين.",
-    other_proj_title: "مشاريع أخرى",
-    p1_title: "نظام إدارة الطلاب",
-    p1_desc: "تطبيق ويب باستخدام Python و MySQL و HTML/CSS.",
-    p2_title: "أتمتة البيانات",
-    p2_desc: "برنامج بايثون لتحليل البيانات والأتمتة.",
-    p3_title: "منصة تعليم إلكتروني",
-    p3_desc: "منصة تعلم عبر الإنترنت للدورات.",
-    p4_title: "موقع شركة",
-    p4_desc: "عرض احترافي لخدمات الشركة.",
-    xax4_title: "xax4media",
+    grad_desc: "نظام ويب كامل لإدارة مكتبة الجامعة باستخدام Django. يتضمن النظام إدارة المستخدمين وإدارة الكتب والمفضلة والتقييمات والإشعارات ووظائف البحث وواجهات برمجة REST.",
+    p5_title: "موقع Prime Transporter",
+    p5_desc: "موقع احترافي لشركة نقل يعرض خدمات النقل واللوجستيات بواجهة حديثة ومتجاوبة وسهلة الاستخدام.",
+    xax4_title: "Max4Media",
     xax4_desc: "مشروع وسائط رقمية لإنشاء المحتوى والتصميم وإدارة الشبكات الاجتماعية.",
     skills_title: "المهارات",
-    lang_title: "اللغات",
-    lang_ar: "العربية:",
-    lang_de: "الألمانية:",
-    lang_en: "الإنجليزية:",
     contact_title: "تواصل معي",
     contact_desc: "أنا متاح لفرص جديدة والتعاون.",
     /* new keys (Arabic for projects/contact already added earlier) */
@@ -122,7 +135,7 @@ const translations = {
     contact_email: "البريد الإلكتروني",
     contact_email_value: "bgdady987@gmail.com",
     contact_phone: "الهاتف",
-    contact_phone_value: "0931733249",
+    contact_phone_value: "+963 931 733 249",
     contact_whatsapp: "واتساب",
     contact_whatsapp_note: "راسلني عبر واتساب",
     contact_instagram: "إنستغرام",
@@ -132,45 +145,54 @@ const translations = {
     nav_home: "Start",
     nav_about: "Über",
     nav_edu_exp: "Ausbildung",
+    nav_experience: "Erfahrung",
     nav_projects: "Projekte",
     nav_skills: "Fähigkeiten",
     nav_contact: "Kontakt",
     hero_title: "Hi, ich bin Anas Bagdady",
-    hero_subtitle: "Informatikingenieur & Backend-Entwickler",
-    hero_desc: "Spezialisiert auf robuste Backend-Systeme und digitale Lösungen.",
+    hero_subtitle: "Full-Stack-Entwickler | Backend-Spezialist",
+    hero_desc: "Ich entwickle komplette Webanwendungen von Frontend-Oberflächen bis hin zu Backend-Systemen, mit starkem Fokus auf Django, REST APIs, Datenbanken und skalierbare Backend-Architektur.",
     btn_contact: "Kontakt",
     btn_projects: "Arbeiten",
+    btn_live_website: "Live-Website",
+    btn_github: "GitHub",
+    btn_instagram: "Instagram",
+    exp_desc_1: "Unterstützte bei Netzwerk- und Serverwartung, bot technischen Support und trug zu Digitalisierungsinitiativen innerhalb der Universität bei.",
+    exp_desc_2: "Entwickelte kleine Softwarelösungen und sammelte praktische Erfahrungen in Systemadministration und IT-Betrieb.",
+    skills_cat_backend: "Backend",
+    skills_cat_frontend: "Frontend",
+    skills_cat_tools: "Tools",
+    skills_cat_core: "Kernkompetenzen",
+    proj_feature_responsive: "• Modernes responsives Design",
+    proj_feature_presentation: "• Professionelle Unternehmenspräsentation",
+    proj_feature_showcase: "• Service-Schauseiten",
+    proj_feature_contact: "• Kontakt- und Anfragefunktionalität",
+    proj_feature_ux: "• Optimierte Benutzererfahrung auf Desktop und Mobilgeräten",
     about_title: "Über mich",
-    about_text: "Ich bin Informatikingenieur mit Schwerpunkt auf Backend-Entwicklung, REST-API-Design, Datenbankverwaltung und dem Aufbau skalierbarer Websysteme mit Python und Django.",
-    about_text_2: "Ich verfüge über praktische Erfahrung in der Umsetzung vollständiger Webanwendungen und Automatisierungslösungen mit Fokus auf Wartbarkeit und Performance.",
-    about_text_3: "Ich löse gern komplexe Backend-Probleme, arbeite gern im Team und liefere produktionsreife, skalierbare Systeme.",
+    about_summary: "Full-Stack-Entwickler mit Spezialisierung auf Backend-Engineering, API-Entwicklung und skalierbare Websysteme. Erfahren im Aufbau kompletter Webanwendungen mit Fokus auf saubere Architektur, Performance und wartbaren Code.",
+    about_text: "Ich bin Full-Stack-Entwickler mit starker Spezialisierung auf Backend-Entwicklung und dem Aufbau skalierbarer Webanwendungen.",
+    about_text_2: "Ich arbeite mit Frontend- und Backend-Technologien und entwickle komplette Lösungen, die moderne Benutzeroberflächen mit zuverlässigen und sicheren Serversystemen verbinden.",
+    about_text_3: "Meine Kernkompetenzen umfassen Django, Django REST Framework, API-Entwicklung, Datenbankdesign und Backend-Architektur, während ich auch praktische Erfahrung im Aufbau responsiver Frontend-Anwendungen habe.",
     edu_title: "Ausbildung",
     edu_degree: "Bachelor in Informatik",
     edu_institution: "Ebla University, Syria",
     edu_extra: "Teilnahme am Internationalen Programmierwettbewerb 2025",
+    certs_title: "Zertifikate",
+    cert1_title: "Python-Zertifikat",
+    cert1_desc: "Abschluss eines professionellen Trainings in Python-Programmierung und Django-Webentwicklung.",
+    cert2_title: "Django-Zertifikat",
+    cert2_desc: "Abschluss eines professionellen Trainings in Django-Webentwicklung.",
     exp_title: "Erfahrung",
     exp_role: "Praktikum – IT-Abteilung",
-    exp_list: "",
+    exp_institution: "Ebla Universität, Syrien",
     projects_title: "Projekte",
-    grad_proj_title: "Abschlussprojekt",
     grad_title: "Bibliotheksverwaltung der Universität",
-    grad_desc: "Vollständiges Websystem zur Verwaltung der Universitätsbibliothek mit Django, REST-APIs und Benutzerverwaltung.",
-    other_proj_title: "Weitere Projekte",
-    p1_title: "Studentenverwaltung",
-    p1_desc: "Webanwendung mit Python, MySQL und HTML/CSS.",
-    p2_title: "Datenautomatisierung",
-    p2_desc: "Python-Programm für Datenanalyse und Automatisierung.",
-    p3_title: "E-Learning Plattform",
-    p3_desc: "Online-Lernplattform für Kurse.",
-    p4_title: "Firmenwebsite",
-    p4_desc: "Professionelle Präsentation von Firmendienstleistungen.",
-    xax4_title: "xax4media",
+    grad_desc: "Vollständiges Websystem zur Verwaltung der Universitätsbibliothek mit Django. Das System umfasst Benutzerverwaltung, Projekt-/Buchverwaltung, Favoriten, Bewertungen, Benachrichtigungen, Suchfunktionen und RESTful-APIs.",
+    p5_title: "Prime Transporter Website",
+    p5_desc: "Eine professionelle Website für ein Transportunternehmen zur Präsentation von Transport- und Logistikdienstleistungen mit moderner und responsiver Benutzeroberfläche.",
+    xax4_title: "Max4Media",
     xax4_desc: "Ein digitales Medienprojekt für Content-Erstellung, Design und Social-Media-Management.",
     skills_title: "Technische Fähigkeiten",
-    lang_title: "Sprachen",
-    lang_ar: "Arabisch:",
-    lang_de: "Deutsch:",
-    lang_en: "Englisch:",
     contact_title: "Kontakt",
     contact_desc: "Ich bin offen für neue Möglichkeiten und Kooperationen.",
     /* new keys (German) */
@@ -179,7 +201,7 @@ const translations = {
     contact_email: "E-Mail",
     contact_email_value: "bgdady987@gmail.com",
     contact_phone: "Telefon",
-    contact_phone_value: "0931733249",
+    contact_phone_value: "+963 931 733 249",
     contact_whatsapp: "WhatsApp",
     contact_whatsapp_note: "Schreiben Sie mir über WhatsApp",
     contact_instagram: "Instagram",
@@ -349,4 +371,95 @@ document.addEventListener('DOMContentLoaded', ()=> {
     b.addEventListener('mouseenter', ()=> b.classList.add('hovering'));
     b.addEventListener('mouseleave', ()=> b.classList.remove('hovering'));
   });
+
+  initProjectLightbox();
+  initLibrarySlider();
 });
+
+function initProjectLightbox(){
+  const overlay = document.querySelector('.lightbox-overlay');
+  if(!overlay) return;
+
+  const image = overlay.querySelector('.lightbox-image');
+  const caption = overlay.querySelector('.lightbox-caption');
+  const closeBtn = overlay.querySelector('.lightbox-close');
+
+  const openLightbox = (src, alt) => {
+    image.src = src;
+    image.alt = alt || '';
+    caption.textContent = alt || '';
+    overlay.classList.add('visible');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    overlay.classList.remove('visible');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.removeProperty('overflow');
+    window.setTimeout(()=>{
+      image.src = '';
+      image.alt = '';
+      caption.textContent = '';
+    }, 300);
+  };
+
+  document.querySelectorAll('.gallery-image-btn, .gallery-thumb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const img = btn.querySelector('img');
+      if(!img) return;
+      openLightbox(img.src, img.alt);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+
+  overlay.addEventListener('click', (event) => {
+    if(event.target === overlay){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if(event.key === 'Escape' && overlay.classList.contains('visible')){
+      closeLightbox();
+    }
+  });
+}
+
+function initLibrarySlider(){
+  const libraryImages = [
+     "a2.png",
+    "a3.png",
+    "a4.png",
+    "a5.png",
+    "a6.png",
+    "a7.png",
+    "a8.png",
+    "a1.png"
+  ];
+
+  let currentLibraryImage = 0;
+  const librarySlider = document.querySelector('[data-slider="library"]');
+  if(!librarySlider) return;
+
+  const image = librarySlider.querySelector('.library-slider-image');
+  const prevBtn = librarySlider.querySelector('.library-slider-btn.prev');
+  const nextBtn = librarySlider.querySelector('.library-slider-btn.next');
+  if(!image || !prevBtn || !nextBtn) return;
+
+  function updateLibraryImage(){
+    image.src = libraryImages[currentLibraryImage];
+    image.alt = `University Library screenshot ${currentLibraryImage + 1}`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentLibraryImage = (currentLibraryImage - 1 + libraryImages.length) % libraryImages.length;
+    updateLibraryImage();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentLibraryImage = (currentLibraryImage + 1) % libraryImages.length;
+    updateLibraryImage();
+  });
+}
