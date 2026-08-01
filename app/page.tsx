@@ -506,9 +506,9 @@ export default function Home() {
       <span className="cursor-dot" ref={cursorDotRef} aria-hidden="true" />
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Anas Bagdady">
-          <span className="brand-monogram">AB</span>
+          <span className="brand-monogram" aria-hidden="true">AB</span>
           <span className="brand-copy">
-            <strong>ANAS BAGDADY</strong>
+            <strong lang="en">Anas Bagdady</strong>
             <small>{t.brandSub}</small>
           </span>
         </a>
@@ -940,8 +940,8 @@ export default function Home() {
 
       <footer>
         <a className="brand" href="#home">
-          <span className="brand-monogram">AB</span>
-          <span className="brand-copy"><strong>ANAS BAGDADY</strong><small>{t.brandSub}</small></span>
+          <span className="brand-monogram" aria-hidden="true">AB</span>
+          <span className="brand-copy"><strong lang="en">Anas Bagdady</strong><small>{t.brandSub}</small></span>
         </a>
         <p>{t.rights}</p>
         <a href="#home">{t.top} <span>↑</span></a>
