@@ -354,17 +354,17 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(4, 16, 32, 0.82) 0%,
-      rgba(4, 16, 32, 0.4) 30%,
-      rgba(4, 16, 32, 0.1) 52%,
-      rgba(4, 16, 32, 0.04) 100%
+      rgba(4, 16, 32, 0.88) 0%,
+      rgba(4, 16, 32, 0.62) 32%,
+      rgba(4, 16, 32, 0.22) 55%,
+      rgba(4, 16, 32, 0.08) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.22) 0%,
+      rgba(4, 16, 32, 0.28) 0%,
       transparent 26%,
       transparent 76%,
-      rgba(4, 16, 32, 0.5) 100%
+      rgba(4, 16, 32, 0.55) 100%
     );
 }
 
@@ -372,17 +372,17 @@ button {
   background:
     linear-gradient(
       270deg,
-      rgba(4, 16, 32, 0.82) 0%,
-      rgba(4, 16, 32, 0.4) 30%,
-      rgba(4, 16, 32, 0.1) 52%,
-      rgba(4, 16, 32, 0.04) 100%
+      rgba(4, 16, 32, 0.88) 0%,
+      rgba(4, 16, 32, 0.62) 32%,
+      rgba(4, 16, 32, 0.22) 55%,
+      rgba(4, 16, 32, 0.08) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.22) 0%,
+      rgba(4, 16, 32, 0.28) 0%,
       transparent 26%,
       transparent 76%,
-      rgba(4, 16, 32, 0.5) 100%
+      rgba(4, 16, 32, 0.55) 100%
     );
 }
 
@@ -490,6 +490,21 @@ button {
   color: #345775;
   font-size: clamp(15px, 1.25vw, 18px);
   line-height: 1.85;
+}
+
+.portfolio[data-theme="dark"] .hero-description {
+  color: #e8f4ff;
+  text-shadow:
+    0 1px 2px rgba(2, 10, 24, 0.75),
+    0 8px 24px rgba(2, 10, 24, 0.45);
+}
+
+.portfolio[data-theme="dark"] .hero-copy {
+  text-shadow: 0 2px 18px rgba(2, 10, 24, 0.35);
+}
+
+.portfolio[data-theme="dark"] .availability {
+  color: #b7d4ef;
 }
 
 .hero-actions {
