@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import GoldenSculpture from "./GoldenSculpture";
 
@@ -618,6 +619,17 @@ export default function Home() {
             activeSection={activeSection}
             onActivate={() => navigateTo("projects")}
           />
+          <figure className="portrait-frame">
+            <span className="portrait-number">AB / 01</span>
+            <Image
+              src="/anas-portrait.png"
+              alt={lang === "ar" ? "أنس البغدادي" : "Anas Bagdady"}
+              width={720}
+              height={960}
+              priority
+              sizes="(max-width: 900px) 57vw, 340px"
+            />
+          </figure>
           <div className="core-navigation" aria-label={t.coreNav}>
             {coreLinks.map((item) => (
               <button

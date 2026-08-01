@@ -682,44 +682,48 @@ button {
 .portrait-frame {
   position: absolute;
   z-index: 3;
-  inset: auto 1% -1% auto;
-  width: min(50%, 365px);
+  inset: auto 2% 2% auto;
+  width: min(46%, 340px);
+  aspect-ratio: 3 / 4;
+  margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 248, 235, 0.3);
+  border: 1px solid rgba(29, 116, 255, 0.22);
   border-radius: 180px 180px 24px 24px;
-  background: linear-gradient(150deg, #5d4435, #21150f);
+  background: linear-gradient(150deg, #d7e8ff, #8eb7ef);
   box-shadow:
-    0 38px 75px rgba(67, 41, 24, 0.23),
-    inset 0 1px rgba(255, 255, 255, 0.25);
+    0 38px 75px rgba(20, 70, 150, 0.18),
+    inset 0 1px rgba(255, 255, 255, 0.45);
   pointer-events: none;
   transform: translateZ(30px);
 }
 
 .portfolio:dir(rtl) .portrait-frame {
-  inset: auto auto -1% 1%;
+  inset: auto auto 2% 2%;
 }
 
 .portrait-frame::before {
   position: absolute;
   z-index: 2;
   inset: 0;
-  background: linear-gradient(180deg, transparent 62%, rgba(38, 22, 14, 0.42));
+  background: linear-gradient(180deg, transparent 58%, rgba(8, 34, 78, 0.38));
   content: "";
 }
 
 .portrait-frame img {
   display: block;
   width: 100%;
-  height: auto;
-  filter: sepia(0.32) saturate(0.78) contrast(1.04) brightness(1.03);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  filter: saturate(1.02) contrast(1.03);
 }
 
 .portrait-number {
   position: absolute;
   z-index: 4;
-  top: 24px;
-  right: 29px;
-  color: rgba(255, 248, 235, 0.66);
+  top: 22px;
+  right: 26px;
+  color: rgba(255, 255, 255, 0.82);
   font-family: var(--font-geist-mono), monospace;
   font-size: 10px;
   letter-spacing: 0.2em;
@@ -727,7 +731,15 @@ button {
 
 .portfolio:dir(rtl) .portrait-number {
   right: auto;
-  left: 29px;
+  left: 26px;
+}
+
+.portfolio[data-theme="dark"] .portrait-frame {
+  border-color: rgba(104, 227, 255, 0.28);
+  background: linear-gradient(150deg, #16385f, #071525);
+  box-shadow:
+    0 38px 75px rgba(0, 20, 48, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.12);
 }
 
 .interaction-hint {
@@ -2167,9 +2179,13 @@ footer > a:last-child span {
   }
 
   .portrait-frame {
-    width: 57%;
-    inset-block-end: 0;
-    border-radius: 140px 140px 19px 19px;
+    width: min(52%, 220px);
+    inset: auto 3% 0 auto;
+    border-radius: 120px 120px 18px 18px;
+  }
+
+  .portfolio:dir(rtl) .portrait-frame {
+    inset: auto auto 0 3%;
   }
 
   .floating-card {
