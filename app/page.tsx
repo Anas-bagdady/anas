@@ -368,7 +368,7 @@ const getText = (value: Dual, lang: Lang) => value[lang];
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>("ar");
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [introVisible, setIntroVisible] = useState(true);
