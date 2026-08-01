@@ -300,11 +300,9 @@ button {
   z-index: 0;
   inset: 0;
   pointer-events: none;
-}
-
-.hero-photo img {
-  object-fit: cover;
-  object-position: center 18%;
+  background-position: center 18%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-photo-veil {
@@ -315,17 +313,17 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(248, 252, 255, 0.94) 0%,
-      rgba(248, 252, 255, 0.88) 38%,
-      rgba(232, 244, 255, 0.55) 62%,
-      rgba(232, 244, 255, 0.28) 100%
+      rgba(248, 252, 255, 0.9) 0%,
+      rgba(248, 252, 255, 0.72) 34%,
+      rgba(232, 244, 255, 0.35) 58%,
+      rgba(232, 244, 255, 0.12) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(248, 252, 255, 0.55) 0%,
-      transparent 28%,
-      transparent 72%,
-      rgba(232, 244, 255, 0.72) 100%
+      rgba(248, 252, 255, 0.35) 0%,
+      transparent 30%,
+      transparent 70%,
+      rgba(232, 244, 255, 0.55) 100%
     );
 }
 
@@ -333,17 +331,17 @@ button {
   background:
     linear-gradient(
       270deg,
-      rgba(248, 252, 255, 0.94) 0%,
-      rgba(248, 252, 255, 0.88) 38%,
-      rgba(232, 244, 255, 0.55) 62%,
-      rgba(232, 244, 255, 0.28) 100%
+      rgba(248, 252, 255, 0.9) 0%,
+      rgba(248, 252, 255, 0.72) 34%,
+      rgba(232, 244, 255, 0.35) 58%,
+      rgba(232, 244, 255, 0.12) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(248, 252, 255, 0.55) 0%,
-      transparent 28%,
-      transparent 72%,
-      rgba(232, 244, 255, 0.72) 100%
+      rgba(248, 252, 255, 0.35) 0%,
+      transparent 30%,
+      transparent 70%,
+      rgba(232, 244, 255, 0.55) 100%
     );
 }
 
@@ -351,17 +349,17 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(4, 16, 32, 0.94) 0%,
-      rgba(4, 16, 32, 0.86) 40%,
-      rgba(4, 16, 32, 0.5) 68%,
-      rgba(4, 16, 32, 0.28) 100%
+      rgba(4, 16, 32, 0.88) 0%,
+      rgba(4, 16, 32, 0.7) 36%,
+      rgba(4, 16, 32, 0.35) 64%,
+      rgba(4, 16, 32, 0.16) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.55) 0%,
+      rgba(4, 16, 32, 0.4) 0%,
       transparent 30%,
       transparent 70%,
-      rgba(4, 16, 32, 0.75) 100%
+      rgba(4, 16, 32, 0.62) 100%
     );
 }
 
@@ -369,17 +367,17 @@ button {
   background:
     linear-gradient(
       270deg,
-      rgba(4, 16, 32, 0.94) 0%,
-      rgba(4, 16, 32, 0.86) 40%,
-      rgba(4, 16, 32, 0.5) 68%,
-      rgba(4, 16, 32, 0.28) 100%
+      rgba(4, 16, 32, 0.88) 0%,
+      rgba(4, 16, 32, 0.7) 36%,
+      rgba(4, 16, 32, 0.35) 64%,
+      rgba(4, 16, 32, 0.16) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.55) 0%,
+      rgba(4, 16, 32, 0.4) 0%,
       transparent 30%,
       transparent 70%,
-      rgba(4, 16, 32, 0.75) 100%
+      rgba(4, 16, 32, 0.62) 100%
     );
 }
 
@@ -2269,8 +2267,8 @@ footer > a:last-child span {
     inset: -2% -24% 0;
   }
 
-  .hero-photo img {
-    object-position: center 12%;
+  .hero-photo {
+    background-position: center 12%;
   }
 
   .hero-photo-veil,
@@ -2278,10 +2276,10 @@ footer > a:last-child span {
     background:
       linear-gradient(
         180deg,
-        rgba(248, 252, 255, 0.82) 0%,
-        rgba(248, 252, 255, 0.9) 42%,
-        rgba(232, 244, 255, 0.78) 72%,
-        rgba(232, 244, 255, 0.92) 100%
+        rgba(248, 252, 255, 0.55) 0%,
+        rgba(248, 252, 255, 0.78) 38%,
+        rgba(232, 244, 255, 0.68) 70%,
+        rgba(232, 244, 255, 0.86) 100%
       );
   }
 
@@ -2290,10 +2288,10 @@ footer > a:last-child span {
     background:
       linear-gradient(
         180deg,
-        rgba(4, 16, 32, 0.78) 0%,
-        rgba(4, 16, 32, 0.88) 42%,
-        rgba(4, 16, 32, 0.72) 72%,
-        rgba(4, 16, 32, 0.92) 100%
+        rgba(4, 16, 32, 0.5) 0%,
+        rgba(4, 16, 32, 0.75) 38%,
+        rgba(4, 16, 32, 0.62) 70%,
+        rgba(4, 16, 32, 0.86) 100%
       );
   }
 

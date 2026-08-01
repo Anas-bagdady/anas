@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import GoldenSculpture from "./GoldenSculpture";
 
@@ -587,15 +586,11 @@ export default function Home() {
       </nav>
 
       <section id="home" className="hero">
-        <div className="hero-photo" aria-hidden="true">
-          <Image
-            src="/anas-portrait.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-          />
-        </div>
+        <div
+          className="hero-photo"
+          aria-hidden="true"
+          style={{ backgroundImage: "url(/anas/anas-portrait.jpg)" }}
+        />
         <div className="hero-photo-veil" aria-hidden="true" />
         <div className="hero-lines" aria-hidden="true" />
         <div className="hero-copy">
