@@ -587,6 +587,16 @@ export default function Home() {
       </nav>
 
       <section id="home" className="hero">
+        <div className="hero-photo" aria-hidden="true">
+          <Image
+            src="/anas-portrait.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+          />
+        </div>
+        <div className="hero-photo-veil" aria-hidden="true" />
         <div className="hero-lines" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow">
@@ -619,17 +629,6 @@ export default function Home() {
             activeSection={activeSection}
             onActivate={() => navigateTo("projects")}
           />
-          <figure className="portrait-frame">
-            <span className="portrait-number">AB / 01</span>
-            <Image
-              src="/anas-portrait.png"
-              alt={lang === "ar" ? "أنس البغدادي" : "Anas Bagdady"}
-              width={720}
-              height={960}
-              priority
-              sizes="(max-width: 900px) 57vw, 340px"
-            />
-          </figure>
           <div className="core-navigation" aria-label={t.coreNav}>
             {coreLinks.map((item) => (
               <button
