@@ -409,11 +409,11 @@ export default function Home() {
 
     const title =
       lang === "ar"
-        ? "أنس البغدادي | مطوّر Full-Stack ومتخصص Backend"
+        ? "أنس البغدادي | انس بغدادي | مطوّر Full-Stack ومتخصص Backend"
         : "Anas Bagdady | Full-Stack Developer & Backend Specialist";
     const description =
       lang === "ar"
-        ? "بورتفوليو أنس البغدادي — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend القابلة للتوسع. متاح للعمل عن بُعد عالميًا."
+        ? "بورتفوليو أنس البغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا."
         : "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.";
 
     document.title = title;

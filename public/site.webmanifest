@@ -1,0 +1,27 @@
+{
+  "name": "أنس البغدادي | Anas Bagdady",
+  "short_name": "أنس البغدادي",
+  "description": "بورتفوليو أنس البغدادي — مطوّر Full-Stack ومتخصص Backend",
+  "start_url": "/anas/",
+  "display": "standalone",
+  "background_color": "#020712",
+  "theme_color": "#06152b",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/anas/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/anas/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/anas/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

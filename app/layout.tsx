@@ -24,16 +24,35 @@ const notoSansArabic = Noto_Sans_Arabic({
 
 const siteUrl = "https://anas-bagdady.github.io/anas";
 
+const titleAr = "أنس البغدادي | مطوّر Full-Stack ومتخصص Backend";
+const titleEn = "Anas Bagdady | Full-Stack Developer & Backend Specialist";
+const titleDefault = `${titleAr} — ${titleEn}`;
+
+const descriptionAr =
+  "بورتفوليو أنس البغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا.";
+const descriptionEn =
+  "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.";
+const descriptionDefault = `${descriptionAr} ${descriptionEn}`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Anas Bagdady | Full-Stack Developer & Backend Specialist",
-    template: "%s | Anas Bagdady",
+    default: titleDefault,
+    template: "%s | أنس البغدادي | Anas Bagdady",
   },
-  description:
-    "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.",
+  description: descriptionDefault,
+  applicationName: "أنس البغدادي | Anas Bagdady",
   keywords: [
+    "أنس البغدادي",
+    "انس البغدادي",
+    "انس بغدادي",
+    "أنس بغدادي",
+    "مطور ويب",
+    "مطور Full-Stack",
+    "مطور Backend",
+    "بورتفوليو",
     "Anas Bagdady",
+    "Anas Baghdadi",
     "Full-Stack Developer",
     "Backend Developer",
     "Django",
@@ -42,29 +61,37 @@ export const metadata: Metadata = {
     "Python",
     "Portfolio",
     "Remote Developer",
-    "أنس البغدادي",
-    "مطور ويب",
   ],
-  authors: [{ name: "Anas Bagdady", url: siteUrl }],
-  creator: "Anas Bagdady",
-  publisher: "Anas Bagdady",
+  authors: [
+    { name: "أنس البغدادي", url: siteUrl },
+    { name: "Anas Bagdady", url: siteUrl },
+  ],
+  creator: "أنس البغدادي | Anas Bagdady",
+  publisher: "أنس البغدادي | Anas Bagdady",
   alternates: {
     canonical: siteUrl,
     languages: {
+      "ar-SY": siteUrl,
       ar: siteUrl,
       en: siteUrl,
+      "x-default": siteUrl,
     },
   },
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Anas Bagdady Portfolio",
-    title: "Anas Bagdady | Full-Stack Developer & Backend Specialist",
-    description:
-      "Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend architecture.",
+    siteName: "أنس البغدادي | Anas Bagdady",
+    title: titleDefault,
+    description: descriptionDefault,
     locale: "ar_AR",
     alternateLocale: ["en_US"],
     images: [
+      {
+        url: `${siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 1200,
+        alt: "أنس البغدادي — Anas Bagdady",
+      },
       {
         url: `${siteUrl}/anas-portrait.jpg`,
         width: 720,
@@ -75,10 +102,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anas Bagdady | Full-Stack Developer & Backend Specialist",
-    description:
-      "Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend architecture.",
-    images: [`${siteUrl}/anas-portrait.jpg`],
+    title: titleDefault,
+    description: descriptionDefault,
+    images: [`${siteUrl}/og-image.jpg`],
   },
   robots: {
     index: true,
@@ -92,47 +118,86 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: ["/favicon-48.png"],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  manifest: "/site.webmanifest",
   category: "technology",
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Anas Bagdady",
-  alternateName: "أنس البغدادي",
-  url: siteUrl,
-  image: `${siteUrl}/anas-portrait.jpg`,
-  jobTitle: "Full-Stack Developer & Backend Specialist",
-  description:
-    "Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend architecture.",
-  email: "mailto:bgdady987@gmail.com",
-  telephone: "+963931733249",
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "SY",
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "أنس البغدادي | Anas Bagdady",
+    alternateName: [
+      "انس بغدادي",
+      "أنس بغدادي",
+      "انس البغدادي",
+      "Anas Bagdady",
+      "Anas Baghdadi",
+    ],
+    url: siteUrl,
+    inLanguage: ["ar", "en"],
+    description: descriptionDefault,
+    image: `${siteUrl}/og-image.jpg`,
+    publisher: {
+      "@type": "Person",
+      name: "أنس البغدادي",
+    },
   },
-  alumniOf: {
-    "@type": "CollegeOrUniversity",
-    name: "Ebla University",
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "أنس البغدادي",
+    alternateName: [
+      "انس بغدادي",
+      "أنس بغدادي",
+      "انس البغدادي",
+      "Anas Bagdady",
+      "Anas Baghdadi",
+      "Anas A. Bagdady",
+    ],
+    url: siteUrl,
+    image: `${siteUrl}/og-image.jpg`,
+    jobTitle: "Full-Stack Developer & Backend Specialist",
+    description: descriptionDefault,
+    email: "mailto:bgdady987@gmail.com",
+    telephone: "+963931733249",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "SY",
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "جامعة إيبلا",
+      alternateName: "Ebla University",
+    },
+    knowsAbout: [
+      "Django",
+      "Django REST Framework",
+      "Python",
+      "React",
+      "REST APIs",
+      "MySQL",
+      "PostgreSQL",
+      "Full-Stack Development",
+      "تطوير الويب",
+      "Backend",
+    ],
+    sameAs: [
+      "https://github.com/Anas-bagdady",
+      "https://www.instagram.com/eng_anas_a_bagdady/",
+    ],
   },
-  knowsAbout: [
-    "Django",
-    "Django REST Framework",
-    "Python",
-    "React",
-    "REST APIs",
-    "MySQL",
-    "PostgreSQL",
-    "Full-Stack Development",
-  ],
-  sameAs: [
-    "https://github.com/Anas-bagdady",
-    "https://www.instagram.com/eng_anas_a_bagdady/",
-  ],
-};
+];
 
 export default function RootLayout({
   children,
@@ -142,6 +207,10 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
+        <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png" />
+        <link rel="icon" href="/favicon-192.png" sizes="192x192" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#06152b" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
