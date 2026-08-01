@@ -24,12 +24,12 @@ const notoSansArabic = Noto_Sans_Arabic({
 
 const siteUrl = "https://anas-bagdady.github.io/anas";
 
-const titleAr = "أنس البغدادي | مطوّر Full-Stack ومتخصص Backend";
+const titleAr = "أنس بغدادي | مطوّر Full-Stack ومتخصص Backend";
 const titleEn = "Anas Bagdady | Full-Stack Developer & Backend Specialist";
 const titleDefault = `${titleAr} — ${titleEn}`;
 
 const descriptionAr =
-  "بورتفوليو أنس البغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا.";
+  "بورتفوليو أنس بغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا.";
 const descriptionEn =
   "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.";
 const descriptionDefault = `${descriptionAr} ${descriptionEn}`;
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: titleDefault,
-    template: "%s | أنس البغدادي | Anas Bagdady",
+    template: "%s | أنس بغدادي | Anas Bagdady",
   },
   description: descriptionDefault,
-  applicationName: "أنس البغدادي | Anas Bagdady",
+  applicationName: "أنس بغدادي | Anas Bagdady",
   keywords: [
-    "أنس البغدادي",
-    "انس البغدادي",
+    "أنس بغدادي",
+    "انس بغدادي",
     "انس بغدادي",
     "أنس بغدادي",
     "مطور ويب",
@@ -63,11 +63,11 @@ export const metadata: Metadata = {
     "Remote Developer",
   ],
   authors: [
-    { name: "أنس البغدادي", url: siteUrl },
+    { name: "أنس بغدادي", url: siteUrl },
     { name: "Anas Bagdady", url: siteUrl },
   ],
-  creator: "أنس البغدادي | Anas Bagdady",
-  publisher: "أنس البغدادي | Anas Bagdady",
+  creator: "أنس بغدادي | Anas Bagdady",
+  publisher: "أنس بغدادي | Anas Bagdady",
   alternates: {
     canonical: siteUrl,
     languages: {
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "أنس البغدادي | Anas Bagdady",
+    siteName: "أنس بغدادي | Anas Bagdady",
     title: titleDefault,
     description: descriptionDefault,
     locale: "ar_AR",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 1200,
-        alt: "أنس البغدادي — Anas Bagdady",
+        alt: "أنس بغدادي — Anas Bagdady",
       },
       {
         url: `${siteUrl}/anas-portrait.jpg`,
@@ -136,11 +136,11 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "أنس البغدادي | Anas Bagdady",
+    name: "أنس بغدادي | Anas Bagdady",
     alternateName: [
       "انس بغدادي",
       "أنس بغدادي",
-      "انس البغدادي",
+      "انس بغدادي",
       "Anas Bagdady",
       "Anas Baghdadi",
     ],
@@ -150,17 +150,17 @@ const jsonLd = [
     image: `${siteUrl}/og-image.jpg`,
     publisher: {
       "@type": "Person",
-      name: "أنس البغدادي",
+      name: "أنس بغدادي",
     },
   },
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "أنس البغدادي",
+    name: "أنس بغدادي",
     alternateName: [
       "انس بغدادي",
       "أنس بغدادي",
-      "انس البغدادي",
+      "انس بغدادي",
       "Anas Bagdady",
       "Anas Baghdadi",
       "Anas A. Bagdady",

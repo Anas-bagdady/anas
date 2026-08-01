@@ -174,14 +174,14 @@ const mobileLinks: Array<{ id: string; icon: string; label: Dual }> = [
 const copy = {
   ar: {
     introBoot: "جاري تشغيل التجربة",
-    introSub: "أنس البغدادي · هندسة برمجيات",
+    introSub: "أنس بغدادي · هندسة برمجيات",
     brandSub: "مهندس برمجيات",
     menu: "فتح القائمة",
     heroKicker: "مطوّر Full-Stack · متخصص Backend",
     heroTitleStart: "أبني تجارب رقمية",
     heroTitleAccent: "متكاملة وقابلة للتوسع.",
     heroDescription:
-      "أنا أنس البغدادي، أطوّر تطبيقات ويب متكاملة من الواجهات الأمامية إلى أنظمة Backend، مع تخصص قوي في Django وREST APIs وقواعد البيانات وهندسة الأنظمة.",
+      "أنا أنس بغدادي، أطوّر تطبيقات ويب متكاملة من الواجهات الأمامية إلى أنظمة Backend، مع تخصص قوي في Django وREST APIs وقواعد البيانات وهندسة الأنظمة.",
     projectsButton: "استكشف مشاريعي",
     contactButton: "تواصل معي",
     sculptureLabel: "نواة معلوماتية ثلاثية الأبعاد تفاعلية",
@@ -264,7 +264,7 @@ const copy = {
     github: "GitHub",
     message: "راسل أنس",
     floatingContact: "ابدأ مشروعًا",
-    rights: "© 2026 أنس البغدادي. جميع الحقوق محفوظة.",
+    rights: "© 2026 أنس بغدادي. جميع الحقوق محفوظة.",
     top: "العودة للأعلى",
   },
   en: {
@@ -409,11 +409,11 @@ export default function Home() {
 
     const title =
       lang === "ar"
-        ? "أنس البغدادي | انس بغدادي | مطوّر Full-Stack ومتخصص Backend"
+        ? "أنس بغدادي | انس بغدادي | مطوّر Full-Stack ومتخصص Backend"
         : "Anas Bagdady | Full-Stack Developer & Backend Specialist";
     const description =
       lang === "ar"
-        ? "بورتفوليو أنس البغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا."
+        ? "بورتفوليو أنس بغدادي (انس بغدادي) — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend. متاح للعمل عن بُعد عالميًا."
         : "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.";
 
     document.title = title;
