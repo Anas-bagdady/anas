@@ -303,7 +303,7 @@ button {
   background-position: 58% 12%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: contrast(1.06) saturate(1.04) brightness(1.04);
+  filter: saturate(0.92) contrast(1.02) brightness(0.92);
 }
 
 .portfolio:dir(rtl) .hero-photo {
@@ -316,73 +316,125 @@ button {
   inset: 0;
   pointer-events: none;
   background:
+    radial-gradient(
+      circle at 68% 22%,
+      rgba(248, 252, 255, 0.08) 0%,
+      rgba(232, 244, 255, 0.18) 18%,
+      rgba(210, 232, 255, 0.55) 42%,
+      rgba(200, 226, 255, 0.82) 100%
+    ),
     linear-gradient(
       90deg,
-      rgba(248, 252, 255, 0.86) 0%,
-      rgba(248, 252, 255, 0.42) 28%,
-      rgba(232, 244, 255, 0.08) 48%,
-      rgba(232, 244, 255, 0.02) 100%
+      rgba(248, 252, 255, 0.9) 0%,
+      rgba(232, 244, 255, 0.55) 36%,
+      rgba(214, 234, 255, 0.28) 62%,
+      rgba(214, 234, 255, 0.42) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(248, 252, 255, 0.18) 0%,
-      transparent 24%,
-      transparent 78%,
-      rgba(232, 244, 255, 0.42) 100%
+      rgba(232, 244, 255, 0.35) 0%,
+      transparent 30%,
+      transparent 70%,
+      rgba(214, 234, 255, 0.55) 100%
     );
 }
 
 .portfolio:dir(rtl) .hero-photo-veil {
   background:
+    radial-gradient(
+      circle at 32% 22%,
+      rgba(248, 252, 255, 0.08) 0%,
+      rgba(232, 244, 255, 0.18) 18%,
+      rgba(210, 232, 255, 0.55) 42%,
+      rgba(200, 226, 255, 0.82) 100%
+    ),
     linear-gradient(
       270deg,
-      rgba(248, 252, 255, 0.86) 0%,
-      rgba(248, 252, 255, 0.42) 28%,
-      rgba(232, 244, 255, 0.08) 48%,
-      rgba(232, 244, 255, 0.02) 100%
+      rgba(248, 252, 255, 0.9) 0%,
+      rgba(232, 244, 255, 0.55) 36%,
+      rgba(214, 234, 255, 0.28) 62%,
+      rgba(214, 234, 255, 0.42) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(248, 252, 255, 0.18) 0%,
-      transparent 24%,
-      transparent 78%,
-      rgba(232, 244, 255, 0.42) 100%
+      rgba(232, 244, 255, 0.35) 0%,
+      transparent 30%,
+      transparent 70%,
+      rgba(214, 234, 255, 0.55) 100%
     );
+}
+
+.portfolio[data-theme="dark"] .hero-photo {
+  filter: saturate(0.85) contrast(1.05) brightness(0.72);
 }
 
 .portfolio[data-theme="dark"] .hero-photo-veil {
   background:
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(8, 28, 56, 0.12) 0%,
+      rgba(4, 18, 40, 0.28) 16%,
+      rgba(3, 14, 32, 0.62) 40%,
+      rgba(2, 10, 24, 0.88) 100%
+    ),
+    radial-gradient(
+      circle at 72% 28%,
+      rgba(52, 213, 255, 0.16),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 22% 70%,
+      rgba(29, 116, 255, 0.14),
+      transparent 32rem
+    ),
     linear-gradient(
       90deg,
-      rgba(4, 16, 32, 0.88) 0%,
-      rgba(4, 16, 32, 0.62) 32%,
-      rgba(4, 16, 32, 0.22) 55%,
-      rgba(4, 16, 32, 0.08) 100%
+      rgba(2, 10, 24, 0.92) 0%,
+      rgba(3, 14, 32, 0.72) 34%,
+      rgba(3, 16, 36, 0.4) 58%,
+      rgba(2, 12, 28, 0.55) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.28) 0%,
-      transparent 26%,
-      transparent 76%,
-      rgba(4, 16, 32, 0.55) 100%
+      rgba(2, 10, 24, 0.4) 0%,
+      transparent 28%,
+      transparent 72%,
+      rgba(2, 10, 24, 0.7) 100%
     );
 }
 
 .portfolio[data-theme="dark"]:dir(rtl) .hero-photo-veil {
   background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(8, 28, 56, 0.12) 0%,
+      rgba(4, 18, 40, 0.28) 16%,
+      rgba(3, 14, 32, 0.62) 40%,
+      rgba(2, 10, 24, 0.88) 100%
+    ),
+    radial-gradient(
+      circle at 28% 28%,
+      rgba(52, 213, 255, 0.16),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 78% 70%,
+      rgba(29, 116, 255, 0.14),
+      transparent 32rem
+    ),
     linear-gradient(
       270deg,
-      rgba(4, 16, 32, 0.88) 0%,
-      rgba(4, 16, 32, 0.62) 32%,
-      rgba(4, 16, 32, 0.22) 55%,
-      rgba(4, 16, 32, 0.08) 100%
+      rgba(2, 10, 24, 0.92) 0%,
+      rgba(3, 14, 32, 0.72) 34%,
+      rgba(3, 16, 36, 0.4) 58%,
+      rgba(2, 12, 28, 0.55) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(4, 16, 32, 0.28) 0%,
-      transparent 26%,
-      transparent 76%,
-      rgba(4, 16, 32, 0.55) 100%
+      rgba(2, 10, 24, 0.4) 0%,
+      transparent 28%,
+      transparent 72%,
+      rgba(2, 10, 24, 0.7) 100%
     );
 }
 
@@ -2289,31 +2341,50 @@ footer > a:last-child span {
 
   .hero-photo,
   .portfolio:dir(rtl) .hero-photo {
-    background-position: center 8%;
-    background-size: 145% auto;
+    background-position: center 10%;
+    background-size: 130% auto;
   }
 
   .hero-photo-veil,
   .portfolio:dir(rtl) .hero-photo-veil {
     background:
+      radial-gradient(
+        circle at 50% 16%,
+        rgba(248, 252, 255, 0.1) 0%,
+        rgba(232, 244, 255, 0.35) 22%,
+        rgba(214, 234, 255, 0.72) 55%,
+        rgba(200, 226, 255, 0.92) 100%
+      ),
       linear-gradient(
         180deg,
-        rgba(248, 252, 255, 0.2) 0%,
-        rgba(248, 252, 255, 0.35) 28%,
-        rgba(248, 252, 255, 0.72) 58%,
-        rgba(232, 244, 255, 0.9) 100%
+        rgba(232, 244, 255, 0.28) 0%,
+        rgba(232, 244, 255, 0.45) 35%,
+        rgba(214, 234, 255, 0.78) 68%,
+        rgba(200, 226, 255, 0.94) 100%
       );
   }
 
   .portfolio[data-theme="dark"] .hero-photo-veil,
   .portfolio[data-theme="dark"]:dir(rtl) .hero-photo-veil {
     background:
+      radial-gradient(
+        circle at 50% 16%,
+        rgba(8, 28, 56, 0.1) 0%,
+        rgba(3, 16, 36, 0.35) 22%,
+        rgba(2, 12, 28, 0.72) 55%,
+        rgba(2, 8, 20, 0.92) 100%
+      ),
+      radial-gradient(
+        circle at 50% 30%,
+        rgba(52, 213, 255, 0.14),
+        transparent 55%
+      ),
       linear-gradient(
         180deg,
-        rgba(4, 16, 32, 0.18) 0%,
-        rgba(4, 16, 32, 0.32) 28%,
-        rgba(4, 16, 32, 0.68) 58%,
-        rgba(4, 16, 32, 0.9) 100%
+        rgba(2, 10, 24, 0.3) 0%,
+        rgba(2, 12, 28, 0.5) 35%,
+        rgba(2, 10, 24, 0.8) 68%,
+        rgba(2, 8, 18, 0.95) 100%
       );
   }
 
@@ -2710,9 +2781,18 @@ footer > a:last-child span {
   background: #081b33;
 }
 
-.portfolio[data-theme="dark"] .hero,
+.portfolio[data-theme="dark"] .hero {
+  background:
+    radial-gradient(circle at 72% 28%, rgba(52, 213, 255, 0.18), transparent 28rem),
+    radial-gradient(circle at 22% 70%, rgba(29, 116, 255, 0.12), transparent 32rem),
+    linear-gradient(135deg, #06152b, #020712);
+}
+
 .portfolio[data-theme="dark"]:dir(rtl) .hero {
-  background: #020712;
+  background:
+    radial-gradient(circle at 28% 28%, rgba(52, 213, 255, 0.18), transparent 28rem),
+    radial-gradient(circle at 78% 70%, rgba(29, 116, 255, 0.12), transparent 32rem),
+    linear-gradient(135deg, #06152b, #020712);
 }
 
 .portfolio[data-theme="dark"] .hero-lines {
