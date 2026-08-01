@@ -101,17 +101,17 @@ const projects = [
 const skillGroups = [
   {
     number: "01",
-    title: { ar: "تطوير Backend", en: "Backend" },
+    title: { ar: "تطوير Backend", en: "Backend Development" },
     icon: "{ }",
     description: {
-      ar: "بناء أنظمة Backend منظمة وقابلة للتوسع مع APIs موثوقة.",
+      ar: "بناء أنظمة Backend منظمة وقابلة للتوسع مع واجهات API موثوقة.",
       en: "Scalable backend systems with clean architecture and reliable APIs.",
     },
     skills: ["Python", "Django", "Django REST Framework", "REST APIs", "MySQL", "PostgreSQL"],
   },
   {
     number: "02",
-    title: { ar: "تطوير Frontend", en: "Frontend" },
+    title: { ar: "تطوير Frontend", en: "Frontend Development" },
     icon: "</>",
     description: {
       ar: "واجهات متجاوبة وسريعة تركز على الوضوح وتجربة المستخدم.",
@@ -131,7 +131,7 @@ const skillGroups = [
   },
   {
     number: "04",
-    title: { ar: "المهارات الأساسية", en: "Core" },
+    title: { ar: "المهارات الأساسية", en: "Core Skills" },
     icon: "◇",
     description: {
       ar: "تفكير هندسي يحوّل المشكلة إلى منتج رقمي متكامل.",
@@ -158,7 +158,7 @@ const skillGroups = [
 ];
 
 const coreLinks: Array<{ id: string; code: string; label: Dual }> = [
-  { id: "about", code: "01", label: { ar: "عني", en: "About" } },
+  { id: "about", code: "01", label: { ar: "نبذة", en: "About" } },
   { id: "projects", code: "02", label: { ar: "المشاريع", en: "Projects" } },
   { id: "skills", code: "03", label: { ar: "المهارات", en: "Skills" } },
   { id: "contact", code: "04", label: { ar: "تواصل", en: "Contact" } },
@@ -177,31 +177,31 @@ const copy = {
     introSub: "أنس البغدادي · هندسة برمجيات",
     brandSub: "مهندس برمجيات",
     menu: "فتح القائمة",
-    heroKicker: "Full-Stack Developer · Backend Specialist",
+    heroKicker: "مطوّر Full-Stack · متخصص Backend",
     heroTitleStart: "أبني تجارب رقمية",
     heroTitleAccent: "متكاملة وقابلة للتوسع.",
     heroDescription:
-      "أنا أنس البغدادي، أطور تطبيقات ويب متكاملة من الواجهات الأمامية إلى أنظمة Backend، مع تخصص قوي في Django وREST APIs وقواعد البيانات وهندسة الأنظمة.",
+      "أنا أنس البغدادي، أطوّر تطبيقات ويب متكاملة من الواجهات الأمامية إلى أنظمة Backend، مع تخصص قوي في Django وREST APIs وقواعد البيانات وهندسة الأنظمة.",
     projectsButton: "استكشف مشاريعي",
     contactButton: "تواصل معي",
     sculptureLabel: "نواة معلوماتية ثلاثية الأبعاد تفاعلية",
     interact: "حرّك نواة البيانات بلمسك",
     coreAction: "حرّك المؤشر فوق النواة لاستكشاف الموقع",
     coreNav: "تنقّل عبر النواة المعلوماتية",
-    enableDark: "تفعيل الثيم الداكن",
-    enableLight: "تفعيل الثيم الفاتح",
+    enableDark: "تفعيل الوضع الداكن",
+    enableLight: "تفعيل الوضع الفاتح",
     available: "متاح لمشاريع جديدة",
-    based: "Remote",
+    based: "عن بُعد",
     worldwide: "متاح للعمل عالميًا",
     years: "سنوات دراسة هندسية",
-    fullStack: "واجهة + Backend",
+    fullStack: "واجهة أمامية وBackend",
     aboutKicker: "01 / نبذة عني",
     aboutTitle: "من الفكرة إلى التنفيذ",
     aboutAccent: "أبني النظام كاملًا.",
     aboutLead:
-      "مهندس معلوماتية ومطوّر Full-Stack متخصص في هندسة Backend وتطوير الـAPI وأنظمة الويب القابلة للتوسع.",
+      "مهندس معلوماتية ومطوّر Full-Stack متخصص في هندسة Backend وتطوير واجهات API وأنظمة الويب القابلة للتوسع.",
     aboutText:
-      "أعمل على تطوير الواجهات الأمامية والخلفية معًا، وأبني واجهات متجاوبة والأنظمة التي تشغّلها. تركيزي الأساسي على Django وDjango REST Framework والـAPI وقواعد البيانات وهندسة Backend القابلة للصيانة.",
+      "أعمل على تطوير الواجهات الأمامية والخلفية معًا، وأبني واجهات متجاوبة والأنظمة التي تشغّلها. تركيزي الأساسي على Django وDjango REST Framework وواجهات API وقواعد البيانات وهندسة Backend القابلة للصيانة.",
     approach: "منهجية التطوير",
     responsive: "واجهة متجاوبة",
     scalable: "Backend قابل للتوسع",
@@ -219,7 +219,7 @@ const copy = {
     pythonCert: "Python عملي",
     pythonTraining: "تطبيقات برمجية وحل المشكلات",
     djangoCert: "Django وBackend",
-    djangoTraining: "تطوير أنظمة ويب وREST APIs",
+    djangoTraining: "تطوير أنظمة ويب وواجهات REST API",
     aiCert: "أدوات تطوير حديثة",
     aiTraining: "Cursor + Claude · تطوير مدعوم بالذكاء الاصطناعي",
     experienceKicker: "03 / الخبرة",
@@ -227,7 +227,7 @@ const copy = {
     experienceAccent: "ضمن بيئة عمل حقيقية.",
     job: "متدرب في قسم تقنية المعلومات",
     jobText:
-      "دعم البيئة التقنية للجامعة من خلال العمل المباشر على البنية التحتية والبرمجيات ودعم المستخدمين.",
+      "دعمت البيئة التقنية للجامعة من خلال العمل المباشر على البنية التحتية والبرمجيات ودعم المستخدمين.",
     tasks: [
       "صيانة الشبكات والخوادم",
       "الدعم التقني وحل المشكلات",
@@ -237,7 +237,7 @@ const copy = {
     ],
     projectsKicker: "04 / المشاريع",
     projectsTitle: "أعمال مختارة",
-    projectsAccent: "صُممت لتعمل بكفاءة.",
+    projectsAccent: "صُمّمت لتعمل بكفاءة.",
     projectsIntro:
       "أنظمة Full-Stack ومواقع احترافية ومنتجات رقمية مبنية حول الوضوح والاستخدام الحقيقي.",
     swipeHint: "اسحب لاستكشاف المزيد",
@@ -255,7 +255,7 @@ const copy = {
     contactTitle: "لديك مشروع؟",
     contactAccent: "دعنا نبنيه معًا.",
     contactText:
-      "متاح لمشاريع Full-Stack وأنظمة Backend وتطوير API والتعاون في المنتجات الرقمية.",
+      "متاح لمشاريع Full-Stack وأنظمة Backend وتطوير واجهات API والتعاون في المنتجات الرقمية.",
     start: "ابدأ محادثة",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
@@ -268,15 +268,15 @@ const copy = {
     top: "العودة للأعلى",
   },
   en: {
-    introBoot: "INITIALIZING EXPERIENCE",
-    introSub: "ANAS BAGDADY · SOFTWARE ENGINEERING",
+    introBoot: "Starting the experience",
+    introSub: "Anas Bagdady · Software Engineering",
     brandSub: "Software Engineer",
     menu: "Open menu",
     heroKicker: "Full-Stack Developer · Backend Specialist",
     heroTitleStart: "I build complete",
     heroTitleAccent: "digital systems that scale.",
     heroDescription:
-      "I’m Anas Bagdady. I develop complete web applications from frontend interfaces to backend systems, with a strong specialization in Django, REST APIs, databases, and scalable architecture.",
+      "I'm Anas Bagdady. I develop complete web applications from frontend interfaces to backend systems, with a strong specialization in Django, REST APIs, databases, and scalable architecture.",
     projectsButton: "Explore my work",
     contactButton: "Contact me",
     sculptureLabel: "Interactive three-dimensional informatics core",
@@ -287,7 +287,7 @@ const copy = {
     enableLight: "Enable light theme",
     available: "Available for new projects",
     based: "Remote",
-    worldwide: "Available Worldwide",
+    worldwide: "Available worldwide",
     years: "Years of engineering study",
     fullStack: "Frontend + Backend",
     aboutKicker: "01 / About",
@@ -303,8 +303,8 @@ const copy = {
     reliable: "Reliable data layer",
     educationKicker: "02 / Education",
     educationTitle: "Academic foundation",
-    educationAccent: "& continuous growth.",
-    degree: "Bachelor in Informatics Engineering",
+    educationAccent: "and continuous growth.",
+    degree: "Bachelor's in Informatics Engineering",
     university: "Ebla University · Syria",
     degreeText:
       "A strong foundation in software engineering, programming, databases, networking, and system design.",
@@ -315,14 +315,14 @@ const copy = {
     pythonTraining: "Software applications and problem solving",
     djangoCert: "Django & Backend",
     djangoTraining: "Web systems and REST API development",
-    aiCert: "Modern Development Tools",
+    aiCert: "Modern development tools",
     aiTraining: "Cursor + Claude · AI-assisted development",
     experienceKicker: "03 / Experience",
     experienceTitle: "Technical experience",
     experienceAccent: "in the real world.",
     job: "IT Department Intern",
     jobText:
-      "Supported the university’s technical environment through hands-on infrastructure, software, and user support work.",
+      "Supported the university's technical environment through hands-on infrastructure, software, and user support work.",
     tasks: [
       "Network and server maintenance",
       "Technical support and troubleshooting",
@@ -348,9 +348,9 @@ const copy = {
     skillFocus: "Current focus",
     contactKicker: "06 / Contact",
     contactTitle: "Have a project in mind?",
-    contactAccent: "Let’s build it.",
+    contactAccent: "Let's build it.",
     contactText:
-      "I’m open to full-stack projects, backend systems, API development, and thoughtful digital collaborations.",
+      "I'm open to full-stack projects, backend systems, API development, and thoughtful digital collaborations.",
     start: "Start a conversation",
     email: "Email",
     phone: "Phone",
@@ -359,7 +359,7 @@ const copy = {
     github: "GitHub",
     message: "Message Anas",
     floatingContact: "Start a project",
-    rights: "© 2026 ANAS BAGDADY. All Rights Reserved.",
+    rights: "© 2026 Anas Bagdady. All rights reserved.",
     top: "Back to top",
   },
 };
@@ -406,6 +406,23 @@ export default function Home() {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     window.localStorage.setItem("portfolio-language", lang);
+
+    const title =
+      lang === "ar"
+        ? "أنس البغدادي | مطوّر Full-Stack ومتخصص Backend"
+        : "Anas Bagdady | Full-Stack Developer & Backend Specialist";
+    const description =
+      lang === "ar"
+        ? "بورتفوليو أنس البغدادي — مطوّر Full-Stack متخصص في Django وREST APIs وقواعد البيانات وهندسة Backend القابلة للتوسع. متاح للعمل عن بُعد عالميًا."
+        : "Portfolio of Anas Bagdady — Full-Stack Developer specializing in Django, REST APIs, databases, and scalable backend systems. Available for remote projects worldwide.";
+
+    document.title = title;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) metaDescription.setAttribute("content", description);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", title);
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) ogDescription.setAttribute("content", description);
   }, [lang]);
 
   useEffect(() => {
